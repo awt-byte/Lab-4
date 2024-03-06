@@ -3,7 +3,7 @@
 
 In this lab you will use registers in a couple of applications. The first is a register file and the second is an accumulator. You will test both applications on the FPGA Board. 
 
-#Part 1 (Building a register file)
+# Part 1 (Building a register file)
 
 Processors contain an array of registers called a register file. They  are usually implemented using RAM. However, in this part, you will build a register file using regular registers with flip-flops.
 
@@ -13,7 +13,7 @@ Figure 1 shows a register file that contains 2 N registers (rows) and each row i
 
 You can write a new word into the register file by placing it at data_w and specifing the write address on address_w, asserting WE will then invoke the write operation. A similar process can be used for reading a word from the register file, place an address on address_r and data_r will have the word stored at that address.
 
-#Generic Register File
+# Generic Register File
   1. Build a generic register file (call it reg_file) that takes two parameters N and BITS.
   2. The generic register file should utilize 2 N registers and each of the registers should be of
 size BITS.
@@ -29,7 +29,7 @@ assign b = (enable) ? a : 1’bz;
 
 ![image](https://github.com/awt-byte/Lab-4/assets/157842961/48f4936c-9d4a-46a4-91ae-83f0073513ed)
 
-#Register File Application
+# Register File Application
 
 Verify the functionality of the register file by implementing it on the FPGA board:
   1. Place your implementation in a new file called reg_file_application.v
